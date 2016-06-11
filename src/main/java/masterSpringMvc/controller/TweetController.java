@@ -13,7 +13,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.stream.Collectors;
 
 
 /**
@@ -42,6 +41,7 @@ public class TweetController {
     @RequestMapping(value = "/postSearch", method = RequestMethod.POST)
     public String postSearch(HttpServletRequest request, RedirectAttributes redirectAttributes) {
         String search = request.getParameter("search");
+
         redirectAttributes.addAttribute("search", search);
         return "redirect:result";
     }
