@@ -16,7 +16,14 @@
                 <p th:text="${tweet.text}">Tweet message</p>
             </li>
         </ul>
-    </div>
 
+        <form th:action="@{/profile}" method="POST" class="center">
+            <div class="row">
+                <button class="btn indigo" name="BackToProfile" type="submit">Back to profile
+                    <i class="mdi-action-home left"></i>
+                </button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
