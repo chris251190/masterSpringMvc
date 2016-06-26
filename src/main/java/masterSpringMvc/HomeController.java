@@ -1,4 +1,4 @@
-package masterSpringMvc.controller;
+package masterSpringMvc;
 import masterSpringMvc.profile.UserProfileSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
