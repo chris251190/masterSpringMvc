@@ -75,22 +75,8 @@ eclipse {
 	}
 }
 
-configurations {
-	integrationTestCompile.extendsFrom testCompile
-	integrationTestRuntime.extendsFrom testRuntime
-}
 
-sourceSets {
-	integrationTest {
-		compileClasspath += main.output + test.output
-		runtimeClasspath += main.output + test.output
-	}
-}
 
-task integrationTest(type: Test) {
-	testClassesDir = sourceSets.integrationTest.output.classesDir
-	classpath = sourceSets.integrationTest.runtimeClasspath
-	reports.html.destination = file("${reporting.baseDir}/integrationTests")
-}
+
 
 
