@@ -2,6 +2,5 @@
 /build/
 /.idea/
 /.iml/
-/src/main/resources/tomcat.keystore
 /src/main/resources/application.properties
 
